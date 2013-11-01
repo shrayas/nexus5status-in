@@ -9,9 +9,9 @@ NEXUS5_PLAY_PAGE_URL = "https://play.google.com/store/devices/details?id=nexus_5
 
 http_proxy  = https_proxy = ftp_proxy   = PROXY_HOST
 proxyDict = { 
-              "http"  : http_proxy, 
-              "https" : https_proxy, 
-              "ftp"   : ftp_proxy
+        "http"  : "http://"+http_proxy, 
+        "https" : "https://"+https_proxy, 
+        "ftp"   : "ftp://"+ftp_proxy
             }
 
 pageToScrape = requests.get(NEXUS5_PLAY_PAGE_URL, proxies=proxyDict)
