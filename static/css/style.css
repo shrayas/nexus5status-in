@@ -1,0 +1,57 @@
+*
+{
+  margin: 0px;
+  padding: 0px;
+}
+
+body
+{
+  background: #e5e5e5;
+  color: #333;
+  font-family: 'Roboto',"Lucida Grande","Trebuchet MS","Tahoma","Verdana","sans-serif";
+}
+
+h1
+{
+  font-weight: 300;
+}
+
+hr
+{
+  margin: 20px 0;
+}
+
+a
+{
+  text-decoration:none;
+  color: #15c;
+}
+
+a:hover
+{
+  text-decoration:underline;
+}
+
+.container
+{
+  text-align:center;
+  margin: 0 auto;
+  margin-top: 200px;
+  width: 960px;
+}
+
+#topi
+{
+  background: #658092;
+  height: 10px;
+}
+
+#status
+{
+  font-weight: 500;
+}
+
+.last-updated
+{
+  color: #737373;
+}
