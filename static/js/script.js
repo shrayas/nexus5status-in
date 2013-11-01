@@ -15,6 +15,15 @@ $(function(){
     $("#status").html("unknown");
   }
 
+  function setUpdateTime(timestamp){
+    $("#last-updated-string").html("");
+    $("#last-updated-string").html(timestamp);
+  }
+
+  function clearUpdateTime(){
+    $("#last-updated-line").html("");
+  }
+
   function checkStatus(){
 
     function checkStatusSuccess(json){
@@ -26,10 +35,13 @@ $(function(){
         setUnAvailable();
       }
 
+      setUpdateTime(json.timestamp);
+
     }
 
     function checkStatusFailure(){
       setError();
+      clearUpdateTime();
     }
 
     URL = "/up";

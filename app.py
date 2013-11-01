@@ -14,19 +14,10 @@ def showPage():
 @app.route("/up")
 def isUp():
 
-    nexus5PlayPage = requests.get(NEXUS5_PLAY_PAGE_URL)
-    soup = BeautifulSoup(nexus5PlayPage.text)
+    f = open('data.dat','r')
+    statusJsonString = f.readlines()[0]
 
-    notAvailTags = soup.findAll("div",{"class":"not-available"})
-    
-    notAvailFlag = True
-    if len(notAvailTags) > 0:
-        notAvailFlag = False
-
-    status = {}
-    status["status"] = notAvailFlag
-
-    return json.dumps(status)
+    return statusJsonString
 
 if __name__ == "__main__":
     app.run(debug=True)
