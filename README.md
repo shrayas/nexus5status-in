@@ -27,3 +27,4 @@ Every 2 seconds, a simple crawler goes up to the play store website and scraps t
 * Chrome extension (?)
 * Make the current information store into a document store instead of a file (see `getDataViaCron.sh`)
 * Make the entire setup configuration based
+* Change the rendering to a template model
