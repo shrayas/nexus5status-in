@@ -2,6 +2,7 @@
 env/
 *.db
 *.dat
+conf.py
 
 # Created by http://gitignore.io
 
