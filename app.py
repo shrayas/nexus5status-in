@@ -4,8 +4,10 @@ import json
 from flask import Flask, render_template
 from BeautifulSoup import BeautifulSoup
 
+import conf
+
 app = Flask(__name__)
-NEXUS5_PLAY_PAGE_URL = "https://play.google.com/store/devices/details?id=nexus_5_black_16gb"
+OUTPUT_FILE = conf.OUTPUT_FILE
 
 @app.route("/")
 def showPage():
@@ -14,10 +16,14 @@ def showPage():
 @app.route("/up")
 def isUp():
 
-    f = open('data.dat','r')
+    f = open(OUTPUT_FILE,'r')
     statusJsonString = f.readlines()[0]
+    f.close()
 
     return statusJsonString
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.debug = conf.DEBUG
+    app.host = conf.HOST
+    app.port = conf.PORT
+    app.run()
