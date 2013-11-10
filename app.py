@@ -23,7 +23,8 @@ def isUp():
     return statusJsonString
 
 if __name__ == "__main__":
-    app.debug = conf.DEBUG
-    app.host = conf.HOST
-    app.port = conf.PORT
-    app.run()
+    app.run(
+            debug=conf.DEBUG,
+            port=conf.PORT,
+            host=conf.HOST
+            )
