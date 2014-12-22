@@ -1,5 +1,5 @@
 #Nexus 5 Status - India
-> [http://www.nexus5status.in](http://www.nexus5status.in)
+> [http://www.nexus5status.in](http://www.nexus5status.in) (**NOW DEFUNCT**) 
 
 ##Why?
 We all love our nexii (?) and we'd love to get our hands on it. Firstly, it is great that the Great google gods have even listed the device on the Indian Google Play Store. This is a website that simply says if the nexus is available in the Indian play store or not. 
